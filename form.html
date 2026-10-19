@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"</td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" id="password" name="password"   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+            </tr>
+            <tr>
+                <td><label for="kelamin">Jenis Kelamin:</label></td>
+                <td><input type="radio" id="pilihan" name="pil">pria <input type="radio" name="pil" id="">wanita</td>
+            </tr>
+            <tr>
+                <td><label for="jurusan">Jurusan:</label></td>
+                <td><select name="jurusan" id="jurusan">
+                    <optgroup label="FTD">
+                        <option value="S1 Teknik Informatika">Teknik Informatika</option>
+                        <option value="S1 Sistem Informasi">Sistem Komputer</option>
+                        <option value="S1 Sistem Informasi">Desain Komunikasi Visual</option>
+                    </optgroup>
+                    <optgroup label="FEB">
+                        <option value="S1 Teknik Informatika">Teknik Informatika</option>
+                        <option value="S1 Sistem Informasi">Sistem Komputer</option>
+                        <option value="S1 Sistem Informasi">Desain Komunikasi Visual</option>
+                    </optgroup>
+            <tr>
+                <td><label for="massage">massage:</label></td>
+                <td><textarea name="massage" id="massage" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="usia">Usia</label></td>
+                <td><input type="number" name="usia" min="18" max="100"</td>
+            </tr>
+            <tr>
+                <td><label for="tanggal">Tanggal Lahir: </label></td>
+                <td><input type="date" name="tanggal" id="" required</td>
+            </tr>
+            </tr>
+                <td><input type="submit" value="kirim" name="cmdkirim"></td>
+            </tr>
+
+        </table>
+</body>
+</html>
